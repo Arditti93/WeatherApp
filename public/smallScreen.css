@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+    body{
+        background-image: url("images/clouds.jpeg");
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .InputBox {
+        margin-bottom: 10px;
+    }
+
+    .pageWrapper{
+        background-color: rgba(92, 89, 89, 0.4);
+        border-radius:20px;
+        padding: 25px;
+        width: 84%
+    }
+
+    input {
+        padding: 12px 20px;
+        border-radius:20px;
+    }
+
+    select {
+        width: 40%;
+        padding: 12px 20px;
+        border-radius:20px;
+    }
+    .weatherDisplay {
+        width: 245px;
+        border-radius:20px;
+        background-color: rgb(122, 116, 116, 0.4);
+        padding: 15%;
+        padding-left:5%;
+    }
+
+    .weatherDisplay li  {
+        list-style-type: none;
+        font-size: 150%;
+        border-color: rgba(97, 96, 96, 0.4);
+        border-top-style: hidden;
+        border-left-style: hidden;
+        border-right-style: hidden;
+        border-bottom-style: solid;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .art {
+        padding-right: 15px;
+    }
+
+
