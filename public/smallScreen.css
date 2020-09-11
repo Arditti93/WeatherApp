@@ -49,5 +49,13 @@
     .art {
         padding-right: 15px;
     }
-
+    .title {
+        border-color: rgba(97, 96, 96, 0.4);
+        border-top-style: hidden;
+        border-left-style: hidden;
+        border-right-style: hidden;
+        border-bottom-style: solid;
+        padding-left: 15px;
+        padding-bottom: 35px;
+    }
 

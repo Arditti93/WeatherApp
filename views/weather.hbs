@@ -29,7 +29,7 @@
         <ul class="weatherDisplay">
         <h1 class="title">Today's weather in {{data.name}}</h1>
             {{#with data.description}}
-                <li><h4>Discription</h4><img class="art"  src="temperature-atmospheric.png" alt="temp" width="30">{{'null'}}{{this}}</li>
+                <li><h4>Description</h4><img class="art"  src="description.png" alt="temp" width="30">{{'null'}}{{this}}</li>
             {{/with}}
             {{#with data.temp}}
                 <li><h4>Temperature</h4><img class="art"  src="temperature-atmospheric.png" alt="temp" width="30">{{'null'}}{{this}} Degrees</li>
