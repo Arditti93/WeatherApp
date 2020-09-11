@@ -3,7 +3,7 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.hbs",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
