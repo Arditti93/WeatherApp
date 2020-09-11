@@ -1,0 +1,64 @@
+<div class="pageWrapper">
+    <h1>Weather Request</h1>
+
+    <form class="form1" action="/weather" method="POST">
+        <label for="city"><h2>City: </h2></label>
+        <input class="InputBox" type="text" name="location" required>
+        <br>
+        <label for="code"><h2>Country code: </h2> </label>
+        <input class="InputBox" type="text" name="countryCode" required>
+        <br>
+        <label for="query"><h2>Extra Information:</h2> </h2></label>
+                <select name="query">
+                    <option value="General Overview">General</option>
+                    <option value="Wind Speed">Wind Speed</option>
+                    <option value="Sunrise">Sunrise</option>
+                    <option value="Sunset">Sunset</option>
+                </select>
+    <input class="submitText" type="submit" value="submit">
+    </form>
+
+    <br>
+    
+
+</div>
+    {{#if err}}
+            <h2>{{err}}</h2>
+    {{/if}}
+    {{#if listExists}}
+        <ul class="weatherDisplay">
+        <h1 class="title">Today's weather in {{data.name}}</h1>
+            {{#with data.description}}
+                <li><h4>Discription</h4><img class="art"  src="temperature-atmospheric.png" alt="temp" width="30">{{'null'}}{{this}}</li>
+            {{/with}}
+            {{#with data.temp}}
+                <li><h4>Temperature</h4><img class="art"  src="temperature-atmospheric.png" alt="temp" width="30">{{'null'}}{{this}} Degrees</li>
+            {{/with}}
+            {{#with data.feels_like}}
+                <li><h4>Feels like temperature</h4><img class="art"  src="temperature-atmospheric.png" alt="temp" width="30">{{'null'}}{{this}} Degrees</li>
+            {{/with}}
+            {{#with data.temp_min}}
+                <li><h4>Minium temperature</h4><img class="art" src="temperature-atmospheric.png" alt="temp" width="30">{{'null'}}{{this}} Degrees</li>
+            {{/with}}
+            {{#with data.temp_max}}
+                <li><h4>Max temperature</h4></h4><img class="art"  src="temperature-atmospheric.png" alt="temp" width="30">{{'null'}}{{this}} Degrees</li>
+            {{/with}}
+            {{#with data.pressure}}
+                <li><h4>Pressure</h4><img class="art"  src="wind.png" alt="temp" width="40">{{'null'}}{{this}} hPa</li>
+            {{/with}}
+            {{#with data.humidity}}
+                <li><h4>Humidity</h4><img class="art"  src="humidity.png" alt="temp" width="30">{{'null'}}{{this}} %</li>
+            {{/with}}
+            {{#with data.sunrise}}
+                <li><h4>Sunrise</h4><img class="art"  src="sun-rise.png" alt="temp" width="40">{{'null'}}{{this}}</li>
+            {{/with}}
+            {{#with data.sunset}}
+                <li><h4>Sunset</h4><img class="art"  src="sunset.png" alt="temp" width="40">{{'null'}}{{this}}</li>
+            {{/with}}
+            {{#with data.Speed}}
+                <li><h4>Wind speed</h4><img class="art"  src="wind.png" alt="temp" width="30">{{'null'}}{{this}}</li>
+            {{/with}}
+        </ul>
+    {{/if}}
+
+    {{log data}}
