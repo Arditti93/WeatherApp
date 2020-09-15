@@ -8,7 +8,3 @@ A option drop down menu allows the user to request custom information such as su
 Two CSS files allow the app to be fully responsive for mobile users.
 All dependancies installed, npm start will start the server in terminal and launch on localhost 3000
 
-
-  <video controls="true" allowfullscreen="true">
-    <source src="website.mp4" type="video/mp4">
-  </video>
