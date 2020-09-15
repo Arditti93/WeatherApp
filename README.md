@@ -12,4 +12,7 @@ All dependancies installed, npm start will start the server in terminal and laun
 
 ![WeatherApp Demo](Website.gif)
 
+## Request extra weather info from option form
+
+![WeatherApp Demo](Website1.gif)
 
